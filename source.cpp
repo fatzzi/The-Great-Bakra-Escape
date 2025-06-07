@@ -1457,7 +1457,7 @@ std::string nextLevelInstructions = "";
 Rectangle confirmButton = { (float)GLOBAL_SCREEN_WIDTH / 2 - 100, (float)GLOBAL_SCREEN_HEIGHT * 0.75f, 200, 50 };
 
 // Forward declarations for our global UI drawing functions
-void DrawGlobalTitleScreen();
+void DrawStartingScreen();
 void DrawLevelTransitionScreen();
 void DrawGlobalGameOverScreen();
 void DrawGlobalGameWonScreen();
@@ -1631,9 +1631,6 @@ int main() {
     return 0;
 }
 
-// This function is kept for forward declaration consistency but its content is now in DrawStartingScreen().
-void DrawGlobalTitleScreen() {
-}
 
 // Draws the screen shown between levels
 void DrawLevelTransitionScreen() {
